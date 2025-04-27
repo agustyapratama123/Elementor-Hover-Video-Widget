@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Elementor Hover Video Widgettt
+Plugin Name: Elementor Hover Video Widget
 Description: A custom Elementor widget to display an image that turns into a video on hover.
 Version: 1.0
 Author: Your Name

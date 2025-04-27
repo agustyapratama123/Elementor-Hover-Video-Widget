@@ -19,7 +19,16 @@
 }
 
 .elementor-hover-image {
-    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    transition: opacity 0.3s ease;
 }
 
 .elementor-hover-video {
