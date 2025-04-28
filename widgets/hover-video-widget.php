@@ -162,7 +162,35 @@ class Elementor_Hover_Video_Widget extends \Elementor\Widget_Base {
             ]
         );
         
+        $this->add_responsive_control(
+            'container_width',
+            [
+                'label' => __( 'Container Width (px)', 'elementor-hover-video-widget' ),
+                'type' => \Elementor\Controls_Manager::SLIDER,
+                'size_units' => [ 'px' ],
+                'range' => [
+                    'px' => [
+                        'min' => 100,
+                        'max' => 1000,
+                    ],
+                ],
+                'default' => [
+                    'unit' => 'px',
+                    'size' => 300, // default width 300px
+                ],
+                'selectors' => [
+                    '{{WRAPPER}} .elementor-hover-video-container' => 'width: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .elementor-hover-video-container::before' => 'padding-top: 100%; content: ""; display: block;',
+                    '{{WRAPPER}} .elementor-hover-video-container > *' => 'position: absolute; top: 0; left: 0; width: 100%; height: 100%;',
+                ],
+            ]
+        );
+        
+        
+
         $this->end_controls_section();
+
+        
         
     }
 

@@ -1,11 +1,12 @@
 .elementor-hover-video-container {
-    position: relative;
     width: 100%;
-    padding-top: 100%; /* Ini kunci 1:1 ratio */
-    border-radius: 25px;
+    max-width: 100%;
+    height: auto; /* optional: agar fleksibel */
+    margin: 0 auto;
+    position: relative;
     overflow: hidden;
-    cursor: pointer;
-}
+  }
+  
 
 .elementor-hover-image,
 .elementor-hover-video {
